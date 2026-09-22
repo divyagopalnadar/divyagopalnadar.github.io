@@ -117,9 +117,9 @@ export const projects: Project[] = [
     title: 'Aurél Studio',
     year: 2026,
     summary:
-      'A storefront for a fictional quiet-luxury clothing and accessories label. Pages are ' +
-      'server-rendered from a real database, with size and colour selection, a persistent bag ' +
-      'and an admin panel over a REST API.',
+      'A storefront for a fictional quiet-luxury clothing and accessories label, with size and ' +
+      'colour selection, a persistent bag and an admin panel. One switch runs it on Prisma with a ' +
+      'REST API, or as a static export from a JSON catalog for the live demo.',
     highlights: [
       'Server components read from Prisma; admin writes revalidate the prebuilt pages',
       'Image pipeline serves real photos when present and generated placeholders otherwise',
