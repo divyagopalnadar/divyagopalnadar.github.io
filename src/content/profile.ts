@@ -130,7 +130,10 @@ export const projects: Project[] = [
       src: '/projects/aurel-studio.jpg',
       alt: 'Aurél Studio home page with the headline Quiet pieces, made to be lived in, and a featured wool overcoat',
     },
-    links: [{ label: 'Source', href: `https://github.com/${GITHUB_USER}/aurel-studio` }],
+    links: [
+      { label: 'Live demo', href: `https://${GITHUB_USER}.github.io/aurel-studio/` },
+      { label: 'Source', href: `https://github.com/${GITHUB_USER}/aurel-studio` },
+    ],
   },
   {
     id: 'harvest-lane',
