@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Divya Gopal · Senior Frontend & AI/ML Engineer</title>
+    <meta
+      name="description"
+      content="Divya Gopal is a Senior Frontend and AI/ML engineer in San Francisco with 10+ years building data-heavy enterprise SaaS, including Fortinet's FortiSIEM and FortiAI."
+    />
+    <meta name="theme-color" content="#fbfbfa" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0e1014" media="(prefers-color-scheme: dark)" />
+    <link rel="canonical" href="https://divyagopalnadar.github.io/" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="Divya Gopal · Senior Frontend & AI/ML Engineer" />
+    <meta
+      property="og:description"
+      content="10+ years building data-heavy, AI-powered enterprise SaaS. Designed and shipped the frontend of FortiSIEM's data exploration suite."
+    />
+    <meta property="og:url" content="https://divyagopalnadar.github.io/" />
+    <meta property="og:image" content="https://divyagopalnadar.github.io/og-image.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&family=JetBrains+Mono:wght@400;500&display=swap"
+    />
+
+    <!-- Apply the saved or system theme before first paint to avoid a flash. Mirrors useTheme. -->
+    <script>
+      (function () {
+        var theme;
+        try {
+          theme = localStorage.getItem('theme');
+        } catch (e) {}
+        if (theme !== 'light' && theme !== 'dark') {
+          theme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+        document.documentElement.dataset.theme = theme;
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>
+      <p style="padding: 24px; font-family: sans-serif">
+        Divya Gopal, Senior Frontend Engineer.
+        <a href="mailto:divyagopalnadar@gmail.com">divyagopalnadar@gmail.com</a>
+      </p>
+    </noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
