@@ -92,15 +92,15 @@ export const projects: Project[] = [
     id: 'cerop',
     title: 'CEROP Risk Console',
     year: 2026,
-    context: 'Team project, shared across modelling, evaluation and the console · AIT 506 Machine Learning, Westcliff University',
+    context: 'Team of four · AIT 506 Machine Learning, Westcliff University',
     summary:
       'Cross-Border Enterprise Risk & Operations Predictor. Two separate models, one for a ' +
-      'counterparty’s financial distress and one for an order’s late-delivery risk, meet in a ' +
-      'decision console. I designed and built the console from the team’s notebook outputs.',
+      'counterparty’s financial distress (6,819 firms, 3.23% bankrupt) and one for an order’s ' +
+      'late-delivery risk (171,962 orders), shown side by side in a decision console.',
     highlights: [
-      'Threshold explorer over the real 81-step validation sweep; the 0.39 cutoff raised late-delivery recall from 0.63 to 0.85 on the sealed test set',
-      'Every figure links to the notebook cell or slide it came from, and derived values are re-checked by tests',
-      'Triage queue, keyboard-accessible tabs, light and dark themes and hand-built SVG charts, down to 390px',
+      'Designed and built the decision console; every figure links to the notebook cell or report table it came from',
+      'Integrated both cleaned layers into one leakage-safe pipeline and tested the GSCPI macro assumption (monthly r = −0.06, not supported)',
+      'Calibrated cutoff of 0.39 raised late-delivery recall from 0.63 to 0.85 on the sealed test set',
     ],
     stack: ['Random Forest', 'XGBoost', 'React 19', 'TypeScript', 'SVG charts', 'Vitest'],
     image: {
@@ -133,6 +133,29 @@ export const projects: Project[] = [
     links: [{ label: 'Source', href: `https://github.com/${GITHUB_USER}/aurel-studio` }],
   },
   {
+    id: 'harvest-lane',
+    title: 'Harvest Lane',
+    year: 2026,
+    context: 'Rebuilt from VitaPure (2020)',
+    summary:
+      'A fresh-produce and gifting storefront, first built in 2020 with Angular 13, jQuery and ' +
+      'Bootstrap, and rebuilt as a standalone, zoneless Angular 22 app with signals.',
+    highlights: [
+      'Signal-based cart persisted to localStorage, URL-driven search and filters, accessible CDK drawers',
+      'Lazy routes and @defer keep the initial bundle near 103 kB; images cut from 15 MB to 0.3 MB of WebP',
+      '35 Vitest tests and a Playwright smoke test gate every GitHub Pages deploy',
+    ],
+    stack: ['Angular 22', 'Signals', 'Signal Forms', 'Angular CDK', 'SCSS', 'Vitest', 'Playwright'],
+    image: {
+      src: '/projects/harvest-lane.jpg',
+      alt: 'Harvest Lane home page with the headline A wide variety of different fruits and a smoothie hero image',
+    },
+    links: [
+      { label: 'Live demo', href: `https://${GITHUB_USER}.github.io/harvest-lane/` },
+      { label: 'Source', href: `https://github.com/${GITHUB_USER}/harvest-lane` },
+    ],
+  },
+  {
     id: 'nft-minter',
     title: 'NFT Minter',
     year: 2023,
@@ -141,25 +164,6 @@ export const projects: Project[] = [
     highlights: ['Wallet connection and transaction flow', 'Chakra UI component layer'],
     stack: ['Next.js', 'TypeScript', 'Solana web3.js', 'Chakra UI'],
     links: [{ label: 'Source', href: `https://github.com/${GITHUB_USER}/nft-minter` }],
-  },
-  {
-    id: 'vitapure',
-    title: 'VitaPure',
-    year: 2022,
-    summary:
-      'An online grocery storefront for fresh produce and gifting, with category navigation, ' +
-      'promotional offers and a cart. Built with Angular Material and hosted on Firebase.',
-    highlights: [
-      'Responsive layout from desktop down to mobile',
-      'Reusable Angular Material components for catalog and offers',
-      'Deployed to Firebase Hosting',
-    ],
-    stack: ['Angular', 'Angular Material', 'SCSS', 'Firebase'],
-    image: {
-      src: '/projects/vitapure.jpg',
-      alt: 'VitaPure home page showing a smoothie hero banner and product category tiles',
-    },
-    links: [{ label: 'Live site', href: 'https://vitapure-d3db6.web.app/home' }],
   },
 ];
 
