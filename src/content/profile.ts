@@ -95,17 +95,17 @@ export const projects: Project[] = [
     context: 'Team project, shared across modelling, evaluation and the console · AIT 506 Machine Learning, Westcliff University',
     summary:
       'Cross-Border Enterprise Risk & Operations Predictor. Two separate models, one for a ' +
-      'counterparty’s financial distress and one for a shipment’s delivery risk, feed a console that ' +
-      'turns each score into a clear next step: cleared, on watch or needs review.',
+      'counterparty’s financial distress and one for an order’s late-delivery risk, meet in a ' +
+      'decision console. I designed and built the console from the team’s notebook outputs.',
     highlights: [
-      'XGBoost bankruptcy model trained on a 30:1 class imbalance and compared against Logistic Regression at equal recall',
-      'Decision threshold calibrated on validation only; the sealed test set was opened once',
-      'Interactive cutoff explorer and a data-lineage view that traces every figure to its notebook export',
+      'Threshold explorer over the real 81-step validation sweep; the 0.39 cutoff raised late-delivery recall from 0.63 to 0.85 on the sealed test set',
+      'Every figure links to the notebook cell or slide it came from, and derived values are re-checked by tests',
+      'Triage queue, keyboard-accessible tabs, light and dark themes and hand-built SVG charts, down to 390px',
     ],
-    stack: ['XGBoost', 'Logistic Regression', 'Isolation Forest', 'React'],
+    stack: ['Random Forest', 'XGBoost', 'React 19', 'TypeScript', 'SVG charts', 'Vitest'],
     image: {
       src: '/projects/cerop.jpg',
-      alt: 'CEROP Risk Console showing counts of cases that need review and a list of counterparty risk scores',
+      alt: 'CEROP Risk Console overview comparing the financial layer, 25 of 44 bankrupt firms caught, with the operations layer, 84.9% of late orders caught',
     },
     links: [
       { label: 'Live console', href: 'https://divyagopalnadar.github.io/cerop-console/' },
